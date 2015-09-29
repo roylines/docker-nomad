@@ -1,4 +1,6 @@
 FROM alpine:3.1
+MAINTAINER 'github.com/roylines'
+
 RUN apk add --update wget && rm -rf /var/cache/apk/*
 
 RUN mkdir /etc/nomad.d
