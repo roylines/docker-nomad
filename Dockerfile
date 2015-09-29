@@ -1,5 +1,5 @@
 FROM alpine:3.1
-MAINTAINER 'github.com/roylines'
+MAINTAINER Roy Lines <https://roylines.co.uk>
 
 RUN apk add --update wget && rm -rf /var/cache/apk/*
 
