@@ -1,7 +1,8 @@
-FROM alpine:3.1
+FROM alpine
 MAINTAINER Roy Lines <https://roylines.co.uk>
 
-RUN apk add --update wget && rm -rf /var/cache/apk/*
+RUN apk add --update wget ca-certificates
+RUN rm -rf /var/cache/apk/*
 
 RUN mkdir /etc/nomad.d
 RUN chmod a+w /etc/nomad.d
